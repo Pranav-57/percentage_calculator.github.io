@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Percentage Calculator</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="outer_content">
+            <div class="content">
+                <div class="header animated infinite pulse">
+                    <h3>student</h3>
+                    <h3>grade</h3>
+                    <h3>calcy</h3>
+                </div>
+                <div class="form">
+                    <form action="" method="get">
+                        <div class="inputbox">
+                            <input type="number" id="programming" required>
+                            <label for="programming">Programming</label>
+                        </div>
+                        <div class="inputbox">
+                            <input type="number" id="Maths" required>
+                            <label for="Maths">Maths</label>
+                        </div>
+                        <div class="inputbox">
+                            <input type="number" id="computer" required>
+                            <label for="computer">Computer</label>
+                        </div>
+                        <div class="inputbox">
+                            <input type="number" id="physics" required>
+                            <label for="physics">physics</label>
+                        </div>
+                        <input type="button" onclick="calcy()" value="Calculate">
+                    </form>
+                </div>
+            </div>
+                <p class="text-center font-weightbold" id="result"></p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

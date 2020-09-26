@@ -1,0 +1,103 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(70, 224, 204);
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.outer_content{
+    background-color: rgb(61, 61, 61);
+    color: white;   
+    border-radius: 20px;
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 40px 100px;
+}
+.header{
+    margin: 40px;
+    position: relative;
+    text-transform: uppercase;
+    color:rgb(70, 224, 204);
+}
+.header::after{
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 0%;
+    width: 4px;
+    height: 120px;
+    background-color:rgb(70, 224, 204);
+}
+.header h3{
+    font-weight: bold;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+}
+form .inputbox input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid rgb(112, 112, 112);
+    width: 100%;
+    outline: none;
+    color: white;
+}
+input[ type = 'button']{
+    background: transparent;
+    border: none;
+    text-align: left;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: rgb(70, 224, 204);
+    outline: none;
+}
+form label{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 1s ease all;
+}
+form input:focus ~ label, form input:valid ~ label{
+    color: rgb(70, 224, 204);
+    font-size: 10px;
+    top: 0px;
+    left: 0;
+}
+.inputbox{
+    position: relative;
+    padding: 12px 0;
+}
+
+@media (max-width:768px){
+    .content{
+        flex-direction: column;
+    }
+    .header h3{
+        font-size: 15px;
+    }
+    .header::after{
+        height: 75px;
+    }
+    .content{
+        padding: 40px 20px;
+    }
+    form{
+        margin: 0 20px;
+        padding: 0 10px;
+    }
+}
